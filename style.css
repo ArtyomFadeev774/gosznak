@@ -1,0 +1,51 @@
+body {
+    box-sizing: border-box;
+    background-color: #439d8b;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+.info__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.verticalLines-container, .horizontalLines-container {
+    background-color: lightblue;
+}
+
+.info__verticalLines {
+    line-height: 1.5;
+}
+
+b.red {
+    background-color: #d08d8d;
+    padding: 1px;
+}
+
+b.green {
+    background-color: #008000;
+    padding: 1px;
+}
+
+.input-panel {
+    background-color: lightblue;
+    width: 1000px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.input-panel__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+canvas {
+    border-radius: 10px;
+}

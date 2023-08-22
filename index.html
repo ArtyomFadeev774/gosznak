@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="notify.css" />
+	</head>
+	<body>
+		<div class="input-panel">
+			<div class="input-panel__container">
+				<div>
+					<span>Введите ширину знака</span>
+					<input id="num1" type="number" min="1000" />
+				</div>
+				<div>
+					<span>Введите высоту знака</span>
+					<input id="num2" type="number" min="1250" />
+				</div>
+				<button id="btn">Рассчитать</button>
+			</div>
+			
+			<div class="select-range">
+				<span>Масштаб</span>
+				<b><span id="scaleValue">5</span></b>
+				<input type="range" id="test" min="1" max="15" step="1" value="5" />
+			</div>
+		</div>
+		<div class="container">
+			<div style="margin-top: 20px">
+				<canvas id="example"> </canvas>
+			</div>
+
+			<div class="info">
+				<h3 class="info__title">Знак</h3>
+				<div class="info__content">
+					<span class="info__width"></span>
+					<span class="info__height"></span>
+					<span class="info__type"></span>
+					<span class="info__dublicate"></span>
+					<h3 class="info__verticalTitle"></h3>
+					<div class="verticalLines-container">
+						<span class="info__verticalLines"></span>
+					</div>
+					<h3 class="info__horizontalTitle"></h3>
+					<div class="horizontalLines-container">
+						<span class="info__horizontalLines"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="notify">
+			<div class="notify__message--hidden">
+				<div class="notify__container">
+					<span class="notify__cross">X</span>
+					<div class="notify__text"></div>
+				</div>
+			</div>
+		</div>
+		<script src="notify.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
